@@ -1,11 +1,11 @@
-import React, { useState, createContext } from "react";
+import React, { createContext, useState } from "react";
 
 export const BookContext = createContext();
 
 const BookContextProvider = (props) => {
-  const [books, setBooks] = useState([
-    { title: "The Way Of Kings" },
+  const [books] = useState([
     { title: "Name Of The Wind" },
+    { title: "The Way Of The Kings" },
     { title: "The Final Empire" },
     { title: "The Hero Of Ages" },
   ]);
